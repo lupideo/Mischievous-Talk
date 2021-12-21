@@ -13,8 +13,8 @@ class MischievousTalkEntry {
     var verb = ""
     var adjective = ""
     var noun = ""
-    var image = UIImage(named: "object-object_box-of-books")
-    var talk = MischievousTalks.Talk.alluring
+    var image = UIImage(named: "talk-talk_dirty")
+    var talk = MischievousTalks.Talk.dirty
     var whistle = ""
     
     init() {
