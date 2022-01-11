@@ -34,7 +34,18 @@ class ViewController: UIViewController {
 
     @IBAction func talkMischievously(_ sender: Any) {
         updateMischievousTalk()
-        print(mischievousTalk)
+        if mischievousTalk.isValid() {
+            print(mischievousTalk)
+        } else {
+            let alert = UIAlertController(title: "Invalid Talk!", message: "Fill the fields, bitch!", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Go bich!", style: .default) { (action) in
+                //
+            }
+            alert.addAction(action)
+            present(alert, animated: true) {
+                //
+            }
+        }
     }
     
     override func viewDidLoad() {
